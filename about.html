@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<!-- ==========================================================================
+     About Us Page - Med Advance Healthcare
+     ========================================================================== -->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us - Med Advance Healthcare</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- HEADER & NAVIGATION -->
+  <header class="main-header" id="mainHeader">
+    <div class="container header-content">
+      
+      <!-- BRANDING LOGO -->
+      <a href="index.html#home" class="brand-logo" aria-label="Med Advance Healthcare Home">
+        <img src="/logo-removebg-preview.png" alt="Med Advance Healthcare Logo"> 
+      </a>
+
+      <!-- DESKTOP NAVIGATION -->
+      <nav class="desktop-nav">
+        <ul class="nav-links">
+          <li><a href="index.html#home" class="nav-link">Home</a></li>
+          <li><a href="about.html" class="nav-link active">About Us</a></li>
+          <li class="dropdown">
+            <a href="index.html#services" class="nav-link">RCM Services <span class="arrow-down"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="index.html#eligibility">Eligibility & Benefits</a></li>
+              <li><a href="index.html#coding">Medical Coding & Billing</a></li>
+              <li><a href="index.html#denials">Denial Management</a></li>
+              <li><a href="index.html#ar-recovery">A/R Recovery</a></li>
+            </ul>
+          </li>
+          <li><a href="index.html#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- CALL TO ACTION & MOBILE TOGGLE BUTTON -->
+      <div class="header-actions">
+        <a href="index.html#contact" class="btn btn-primary">Free Billing Audit</a>
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle Navigation">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- MOBILE DRAWER NAVIGATION MENU (Added to fix mobile menu toggle) -->
+    <div class="mobile-nav-drawer" id="mobileDrawer">
+      <div class="drawer-header">
+        <span class="drawer-title">Menu</span>
+        <button class="drawer-close" id="drawerCloseBtn" aria-label="Close Navigation">&times;</button>
+      </div>
+      <nav class="mobile-nav-links">
+        <a href="index.html#home" class="mobile-link">Home</a>
+        <a href="about.html" class="mobile-link active">About Us</a>
+        <a href="index.html#services" class="mobile-link">RCM Services</a>
+        <a href="index.html#contact" class="mobile-link">Contact</a>
+        <a href="portal.html" class="mobile-link">Client Portal</a>
+        <a href="index.html#contact" class="btn btn-primary drawer-btn">Free Billing Audit</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ABOUT US MAIN CONTENT SECTION -->
+  <section class="about-section" id="about">
+    <div class="container">
+      <div class="about-grid">
+        
+        <!-- Left: Brand Visual & Stats Box -->
+        <div class="about-visual">
+          <div class="about-card-hero">
+            <div class="badge-gold">10+ Years Experience</div>
+            <h3>Empowering Healthcare Practices with Precision RCM</h3>
+            <p>We combine experienced certified coders, rigorous pre-submission claim scrubbing, and aggressive A/R recovery to maximize medical practice profitability.</p>
+            
+            <div class="about-stats-grid">
+              <div class="stat-box">
+                <span class="stat-num">98%</span>
+                <span class="stat-lbl">Clean Claim Rate</span>
+              </div>
+              <div class="stat-box">
+                <span class="stat-num">30%</span>
+                <span class="stat-lbl">Avg. A/R Days Reduction</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Narrative & Highlights -->
+        <div class="about-content">
+          <div class="sub-heading">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            About Med Advance Healthcare
+          </div>
+          <h2 class="section-title">Your Dedicated Revenue Cycle Management Partner</h2>
+          <p class="section-description">
+            Med Advance Healthcare was founded with a single mission: to eliminate claim denials and ease the financial administrative burden for medical practices across the United States.
+          </p>
+
+          <div class="about-features-list">
+            <div class="about-feature">
+              <div class="feature-icon">✓</div>
+              <div>
+                <h4>Certified RCM Specialists</h4>
+                <p>Our team consists of AAPC and AHIMA certified medical coders and billing professionals specializing in multi-specialty practices.</p>
+              </div>
+            </div>
+
+            <div class="about-feature">
+              <div class="feature-icon">✓</div>
+              <div>
+                <h4>Strict HIPAA Compliance</h4>
+                <p>We maintain enterprise-grade encryption, secure EHR integrations, and 100% HIPAA-compliant data security protocols.</p>
+              </div>
+            </div>
+
+            <div class="about-feature">
+              <div class="feature-icon">✓</div>
+              <div>
+                <h4>Transparent Reporting</h4>
+                <p>Get clear, weekly financial insights and denial root-cause analysis with zero hidden fees or billing surprises.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER SECTION -->
+  <footer class="site-footer">
+    <div class="container">
+      
+      <!-- Top Footer Grid -->
+      <div class="footer-grid">
+
+        <!-- Column 1: Company Info -->
+        <div class="footer-col brand-col">
+          <div class="footer-logo">
+            <div class="logo-symbol">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20M2 12h20"/><circle cx="12" cy="12" r="9"/></svg>
+            </div>
+            <div class="logo-text">
+              <span class="brand-med">MED ADVANCE</span>
+              <span class="brand-sub">HEALTHCARE</span>
+            </div>
+          </div>
+          <p class="footer-about">
+            Delivering end-to-end Revenue Cycle Management (RCM) solutions to medical practices, laboratories, and healthcare organizations across the US. Maximize revenue retention with zero claim leakage.
+          </p>
+          <div class="hipaa-badge">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+            <span>HIPAA Compliant & ISO Certified</span>
+          </div>
+        </div>
+
+        <!-- Column 2: Quick Links -->
+        <div class="footer-col">
+          <h4 class="footer-heading">Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="index.html#home">Home</a></li>
+            <li><a href="index.html#services">Our Services</a></li>
+            <li><a href="index.html#process">How It Works</a></li>
+            <li><a href="index.html#testimonials">Testimonials</a></li>
+            <li><a href="index.html#contact">Free RCM Audit</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 3: RCM Services -->
+        <div class="footer-col">
+          <h4 class="footer-heading">RCM Solutions</h4>
+          <ul class="footer-links">
+            <li><a href="index.html#services">Eligibility & Verification</a></li>
+            <li><a href="index.html#services">Prior Authorization</a></li>
+            <li><a href="index.html#services">Medical Coding & Billing</a></li>
+            <li><a href="index.html#services">Denial Management</a></li>
+            <li><a href="index.html#services">A/R Recovery & Aged Claims</a></li>
+            <li><a href="index.html#services">Provider Credentialing</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 4: Contact Info -->
+        <div class="footer-col">
+          <h4 class="footer-heading">Contact Us</h4>
+          <ul class="footer-contact">
+            <li>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              <span>+1 (800) 555-RCM1</span>
+            </li>
+            <li>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              <span>audit@medadvancehealth.com</span>
+            </li>
+            <li>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              <span>United States</span>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+
+      <!-- Bottom Footer Bar -->
+      <div class="footer-bottom">
+        <p class="copyright">
+          &copy; <span id="current-year"></span> Med Advance Healthcare. All rights reserved.
+        </p>
+        <div class="legal-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">HIPAA Statement</a>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- SCRIPT LINK (Required for mobile menu interaction & copyright year) -->
+  <script src="script.js"></script>
+
+</body>
+</html>

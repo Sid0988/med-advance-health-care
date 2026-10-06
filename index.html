@@ -1,0 +1,732 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Med Advance Healthcare - Advanced RCM & Billing</title>
+    <!-- Use a professional font that complements the logo, e.g., 'Inter' via Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="main-header" id="mainHeader">
+        <div class="container header-content">
+            
+            <!-- BRANDING BLOCK (Update the logo image path here) -->
+            <a href="#home" class="brand-logo" aria-label="Med Advance Healthcare Home">
+                <!-- Replace with your official logo image file -->
+                <img src="/logo-removebg-preview.png" alt="Med Advance Healthcare Logo"> 
+                
+                <!-- Fallback text-based logo, styled to match image -->
+                <!-- <div class="logo-text-wrapper"> -->
+                    <!-- <span class="logo-M">A</span>Placeholder for the stylized M (using A) -->
+                    <!-- <span class="logo-ED">LED</span> -->
+                    <!-- <span class="tagline">Advance Healthcare</span> -->
+                <!-- </div> -->
+            </a>
+
+            <!-- DESKTOP NAVIGATION -->
+            <nav class="desktop-nav">
+                <ul class="nav-links">
+                    <li><a href="#home" class="nav-link active">Home</a></li>
+                    <li><a href="about.html" class="nav-link">About Us</a></li>
+                    <li class="dropdown">
+                        <a href="#services" class="nav-link">RCM Services <span class="arrow-down"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#eligibility">Eligibility & Benefits</a></li>
+                            <li><a href="#coding">Medical Coding & Billing</a></li>
+                            <li><a href="#denials">Denial Management</a></li>
+                            <li><a href="#ar-recovery">A/R Recovery</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+
+            <!-- CALL TO ACTION & MOBILE MENU TOGGLE -->
+            <div class="header-actions">
+                <a href="index.html#contact" class="btn btn-primary">Free Billing Audit</a>
+                <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle Navigation">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- MOBILE OVERLAY / DRAWER MENU -->
+    <div class="mobile-drawer" id="mobileDrawer">
+        <div class="drawer-header">
+            <span class="drawer-title">Menu</span>
+            <button class="drawer-close" id="drawerClose" aria-label="Close Menu">&times;</button>
+        </div>
+        <div class="drawer-content">
+            <ul class="mobile-links">
+                <li><a href="#home" class="mobile-link active">Home</a></li>
+                <li><a href="about.html" class="mobile-link">About Us</a></li>
+                <li><a href="#services" class="mobile-link">RCM Services</a></li>
+                <!-- <li><a href="#portal" class="mobile-link">Client Portal</a></li> -->
+                <li><a href="#contact" class="mobile-link">Contact</a></li>
+            </ul>
+            <div class="drawer-actions">
+                <a href="#audit" class="btn btn-primary w-100">Request Free Audit</a>
+            </div>
+        </div>
+    </div>
+    <div class="drawer-overlay" id="drawerOverlay"></div>
+
+
+    <!-- ==========================================================================
+     Hero Section - Med Advance Healthcare
+     ========================================================================== -->
+<section class="hero-section" id="home">
+  <!-- Subtle background medical grid motif -->
+  <div class="hero-bg-pattern"></div>
+
+  <div class="container hero-container">
+    <!-- Left Column: Headline & Value Proposition -->
+    <div class="hero-content">
+      <div class="hero-badge">
+        <i class="fa-solid fa-shield-halved"></i>
+        <span>HIPAA Compliant & Tech-Enabled RCM</span>
+      </div>
+
+      <h1 class="hero-title">
+        Maximize Cash Flow with <span class="text-gold">Precision Healthcare</span> Billing & RCM
+      </h1>
+
+      <p class="hero-subtitle">
+        <strong>Med Advance Healthcare</strong> delivers end-to-end revenue cycle management designed to cut claim denials, accelerate reimbursements, and optimize clinical practice revenue.
+      </p>
+
+      <!-- Key Highlights / Badges -->
+      <ul class="hero-features">
+        <li><i class="fa-solid fa-circle-check"></i> 98%+ Clean Claim Rate</li>
+        <li><i class="fa-solid fa-circle-check"></i> 30% Faster Reimbursements</li>
+        <li><i class="fa-solid fa-circle-check"></i> Dedicated RCM Specialists</li>
+      </ul>
+
+      <!-- Action Buttons -->
+      <div class="hero-cta-group">
+        <a href="#audit" class="btn btn-gold btn-lg">
+          <span>Schedule Free RCM Audit</span>
+          <i class="fa-solid fa-arrow-right"></i>
+        </a>
+        <a href="#services" class="btn btn-outline-green btn-lg">
+          <span>Explore Services</span>
+        </a>
+      </div>
+
+      <!-- Trust Indicators / Quick Stats -->
+      <div class="hero-stats">
+        <div class="stat-card">
+          <h3 class="stat-number" data-target="99">0</h3><span class="stat-unit">%</span>
+          <p class="stat-label">Claim Accuracy Rate</p>
+        </div>
+        <div class="stat-card">
+          <h3 class="stat-number" data-target="15">0</h3><span class="stat-unit">M+</span>
+          <p class="stat-label">Claims Processed</p>
+        </div>
+        <div class="stat-card">
+          <h3 class="stat-number" data-target="35">0</h3><span class="stat-unit">%</span>
+          <p class="stat-label">Avg. Revenue Increase</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Right Column: Interactive RCM Impact / Preview Card -->
+    <div class="hero-visual">
+      <div class="rcm-card">
+        <div class="rcm-card-header">
+          <div class="card-icon"><i class="fa-solid fa-chart-line"></i></div>
+          <div>
+            <h4>Practice Revenue Optimizer</h4>
+            <p>Estimated Reimbursement Accelerator</p>
+          </div>
+        </div>
+
+        <div class="rcm-card-body">
+          <div class="metric-row">
+            <span>Clean Claim Submission Rate</span>
+            <div class="progress-bar-wrap">
+              <div class="progress-bar" style="width: 98%;"></div>
+            </div>
+            <span class="metric-value">98.5%</span>
+          </div>
+
+          <div class="metric-row">
+            <span>Average Days in A/R</span>
+            <div class="progress-bar-wrap">
+              <div class="progress-bar progress-gold" style="width: 32%;"></div>
+            </div>
+            <span class="metric-value">&lt; 28 Days</span>
+          </div>
+
+          <div class="metric-row">
+            <span>Denial Resolution Success</span>
+            <div class="progress-bar-wrap">
+              <div class="progress-bar" style="width: 92%;"></div>
+            </div>
+            <span class="metric-value">92%</span>
+          </div>
+
+          <!-- Highlight Box inside Visual -->
+          <div class="rcm-highlight-box">
+            <div class="highlight-info">
+              <span class="highlight-title">Revenue Leakage Prevented</span>
+              <span class="highlight-amount">$142,500<small>/year avg.</small></span>
+            </div>
+            <i class="fa-solid fa-vault highlight-icon"></i>
+          </div>
+        </div>
+
+        <div class="rcm-card-footer">
+          <i class="fa-solid fa-lock"></i> Fully Compliant with HIPAA & CMS Guidelines
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==========================================================================
+     Services Section - Med Advance Healthcare
+     ========================================================================== -->
+<section class="services-section" id="services">
+  <div class="container">
+    
+    <!-- Section Header -->
+    <div class="section-header text-center">
+      <div class="sub-heading">
+        <i class="fa-solid fa-stethoscope"></i> Our Specialized Solutions
+      </div>
+      <h2 class="section-title">Comprehensive Revenue Cycle Management</h2>
+      <p class="section-description">
+        We handle every stage of your billing cycle with precision, ensuring zero claim leakage and maximum revenue retention for your practice.
+      </p>
+    </div>
+
+    <!-- Services Grid -->
+    <div class="services-grid">
+
+      <!-- Service Card 1 -->
+      <div class="service-card">
+        <div class="card-badge">Most Requested</div>
+        <div class="service-icon">
+          <i class="fa-solid fa-id-card-clip"></i>
+        </div>
+        <h3 class="service-title">Eligibility & Benefits Verification</h3>
+        <p class="service-text">
+          Real-time patient coverage verification prior to appointments to eliminate coverage denials and estimate patient out-of-pocket costs upfront.
+        </p>
+        <ul class="service-list">
+          <li><i class="fa-solid fa-check"></i> Co-pay & Deductible Tracking</li>
+          <li><i class="fa-solid fa-check"></i> In-Network / Out-of-Network Status</li>
+          <li><i class="fa-solid fa-check"></i> Primary & Secondary Insurance Setup</li>
+        </ul>
+        <a href="#contact" class="service-link">
+          <span>Learn More</span> <i class="fa-solid fa-arrow-right"></i>
+        </a>
+      </div>
+
+      <!-- Service Card 2 -->
+      <div class="service-card">
+        <div class="service-icon">
+          <i class="fa-solid fa-file-signature"></i>
+        </div>
+        <h3 class="service-title">Prior Authorization Management</h3>
+        <p class="service-text">
+          Proactive pre-authorization workflows that ensure high-cost procedures, therapies, and medications get approved without treatment delays.
+        </p>
+        <ul class="service-list">
+          <li><i class="fa-solid fa-check"></i> Payer-Specific Protocol Check</li>
+          <li><i class="fa-solid fa-check"></i> Clinical Documentation Submission</li>
+          <li><i class="fa-solid fa-check"></i> Peer-to-Peer Appeal Support</li>
+        </ul>
+        <a href="#contact" class="service-link">
+          <span>Learn More</span> <i class="fa-solid fa-arrow-right"></i>
+        </a>
+      </div>
+
+      <!-- Service Card 3 -->
+      <div class="service-card highlight-card">
+        <div class="service-icon gold-icon">
+          <i class="fa-solid fa-file-medical"></i>
+        </div>
+        <h3 class="service-title">Medical Coding & Billing</h3>
+        <p class="service-text">
+          Certified ICD-10, CPT, and HCPCS coders minimizing error margins, maximizing clean claims, and enforcing compliance rules.
+        </p>
+        <ul class="service-list">
+          <li><i class="fa-solid fa-check"></i> AAPC / AHIMA Certified Coders</li>
+          <li><i class="fa-solid fa-check"></i> Daily Electronic Claim Scrubbing</li>
+          <li><i class="fa-solid fa-check"></i> Multi-Specialty Coding Expertise</li>
+        </ul>
+        <a href="#contact" class="service-link gold-link">
+          <span>Learn More</span> <i class="fa-solid fa-arrow-right"></i>
+        </a>
+      </div>
+
+      <!-- Service Card 4 -->
+      <div class="service-card">
+        <div class="service-icon">
+          <i class="fa-solid fa-shield-virus"></i>
+        </div>
+        <h3 class="service-title">Denial & Appeal Management</h3>
+        <p class="service-text">
+          Root-cause analysis and swift appeal creation to recover lost revenue from denied, rejected, or partially paid claims.
+        </p>
+        <ul class="service-list">
+          <li><i class="fa-solid fa-check"></i> 48-Hour Denial Triaging</li>
+          <li><i class="fa-solid fa-check"></i> Level 1 & Level 2 Appeals</li>
+          <li><i class="fa-solid fa-check"></i> Denial Prevention Analytics</li>
+        </ul>
+        <a href="#contact" class="service-link">
+          <span>Learn More</span> <i class="fa-solid fa-arrow-right"></i>
+        </a>
+      </div>
+
+      <!-- Service Card 5 -->
+      <div class="service-card">
+        <div class="service-icon">
+          <i class="fa-solid fa-chart-line"></i>
+        </div>
+        <h3 class="service-title">A/R Recovery & Aged Claims</h3>
+        <p class="service-text">
+          Aggressive, systematic follow-up on outstanding 60+, 90+, and 120+ day balances to transform stagnant accounts into cash flow.
+        </p>
+        <ul class="service-list">
+          <li><i class="fa-solid fa-check"></i> Dedicated A/R Follow-up Teams</li>
+          <li><i class="fa-solid fa-check"></i> Payer Portal & Phone Inquiries</li>
+          <li><i class="fa-solid fa-check"></i> Timely Filing Deadline Monitoring</li>
+        </ul>
+        <a href="#contact" class="service-link">
+          <span>Learn More</span> <i class="fa-solid fa-arrow-right"></i>
+        </a>
+      </div>
+
+      <!-- Service Card 6 -->
+      <div class="service-card">
+        <div class="service-icon">
+          <i class="fa-solid fa-user-gear"></i>
+        </div>
+        <h3 class="service-title">Provider Credentialing</h3>
+        <p class="service-text">
+          Complete enrollment and credentialing services to get new providers contracted and re-credentialed with insurance networks on time.
+        </p>
+        <ul class="service-list">
+          <li><i class="fa-solid fa-check"></i> CAQH Profile Management</li>
+          <li><i class="fa-solid fa-check"></i> Medicare / Medicaid Enrollment</li>
+          <li><i class="fa-solid fa-check"></i> Commercial Network Contracting</li>
+        </ul>
+        <a href="#contact" class="service-link">
+          <span>Learn More</span> <i class="fa-solid fa-arrow-right"></i>
+        </a>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- ==========================================================================
+     Why Choose Us / Workflow Process Section - Med Advance Healthcare
+     ========================================================================== -->
+<section class="process-section" id="process">
+  <div class="container">
+    
+    <!-- Section Header -->
+    <div class="section-header text-center">
+      <div class="sub-heading">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+        Streamlined Onboarding
+      </div>
+      <h2 class="section-title">How Med Advance Healthcare Works</h2>
+      <p class="section-description">
+        Transitioning your RCM to us is quick, secure, and zero-disruption to your daily practice operations. Here is our proven 4-step workflow.
+      </p>
+    </div>
+
+    <!-- Process / Workflow Timeline -->
+    <div class="process-grid">
+
+      <!-- Step 1 -->
+      <div class="process-card">
+        <div class="step-number">01</div>
+        <div class="process-icon">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+        </div>
+        <h3 class="process-title">Free Practice Billing Audit</h3>
+        <p class="process-text">
+          We perform a deep-dive analysis into your historic claims, denial reasons, and aged A/R to identify immediate cash-recovery opportunities.
+        </p>
+      </div>
+
+      <!-- Step 2 -->
+      <div class="process-card">
+        <div class="step-number">02</div>
+        <div class="process-icon">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+        </div>
+        <h3 class="process-title">EHR & PMS Integration</h3>
+        <p class="process-text">
+          Our certified team securely connects with your existing Electronic Health Record (EHR) and Practice Management System without downtime.
+        </p>
+      </div>
+
+      <!-- Step 3 -->
+      <div class="process-card">
+        <div class="step-number">03</div>
+        <div class="process-icon">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+        </div>
+        <h3 class="process-title">Daily Scrubbing & Submission</h3>
+        <p class="process-text">
+          Claims are coded, double-scrubbed against payer-specific rules, and electronically submitted within 24 hours of clinical note sign-off.
+        </p>
+      </div>
+
+      <!-- Step 4 -->
+      <div class="process-card">
+        <div class="step-number">04</div>
+        <div class="process-icon">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
+        </div>
+        <h3 class="process-title">Real-Time Reporting & Growth</h3>
+        <p class="process-text">
+          Access weekly revenue analytics, denial root-cause breakdowns, and direct deposit reconciliation reports to track your revenue acceleration.
+        </p>
+      </div>
+
+    </div>
+
+    <!-- Feature Highlights Banner -->
+    <div class="process-banner">
+      <div class="banner-content">
+        <h3>Ready to stop revenue loss and cut claim denials?</h3>
+        <p>Get a comprehensive, zero-obligation RCM assessment tailored to your practice specialty.</p>
+      </div>
+      <a href="#contact" class="btn btn-gold">
+        <span>Request Free Assessment</span>
+      </a>
+    </div>
+
+  </div>
+</section>
+
+<!-- ==========================================================================
+     Contact & Interactive RCM Audit Request Section
+     ========================================================================== -->
+<section class="audit-contact-section" id="contact">
+  <div class="container">
+    <div class="audit-contact-grid">
+
+      <!-- Left Column: Interactive Revenue Loss Calculator & Contact Info -->
+      <div class="audit-info-box">
+        <div class="sub-heading">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+          Instant Revenue Estimator
+        </div>
+        <h2 class="section-title">Are You Losing Uncollected Claims?</h2>
+        <p class="section-description">
+          Medical practices lose up to 10-15% of billing revenue to missed eligibility, uncoded procedures, and un-appealed denials. Estimate your potential recovery below:
+        </p>
+
+        <!-- Interactive Calculator Widget -->
+        <div class="calculator-card">
+          <div class="calc-header">
+            <h4>Monthly Collections Estimator</h4>
+          </div>
+
+          <div class="calc-group">
+            <div class="calc-label-row">
+              <label for="monthly-claims">Estimated Monthly Collections:</label>
+              <span id="monthly-claims-val" class="calc-val-badge">$100,000</span>
+            </div>
+            <input type="range" id="monthly-claims" min="10000" max="1000000" step="10000" value="100000">
+          </div>
+
+          <div class="calc-group">
+            <div class="calc-label-row">
+              <label for="denial-rate">Estimated Claim Denial Rate:</label>
+              <span id="denial-rate-val" class="calc-val-badge">8%</span>
+            </div>
+            <input type="range" id="denial-rate" min="2" max="25" step="1" value="8">
+          </div>
+
+          <!-- Calculated Output Display -->
+          <div class="calc-result-box">
+            <span class="result-label">Estimated Uncollected Annual Revenue:</span>
+            <div class="result-amount" id="uncollected-amount">$9,600 / yr</div>
+            <p class="result-subtext">*Med Advance typically recovers 85%+ of these uncollected funds.</p>
+          </div>
+        </div>
+
+        <!-- Direct Contact Quick Links -->
+        <div class="contact-details-list">
+          <div class="detail-item">
+            <div class="detail-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            </div>
+            <div>
+              <span class="detail-label">Direct Client Line</span>
+              <p class="detail-val">+1 (800) 555-RCM1</p>
+            </div>
+          </div>
+
+          <div class="detail-item">
+            <div class="detail-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            </div>
+            <div>
+              <span class="detail-label">Email Support</span>
+              <p class="detail-val">audit@medadvancehealth.com</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Right Column: Lead Form -->
+      <div class="audit-form-card">
+        <h3 class="form-title">Request Your Free RCM Audit</h3>
+        <p class="form-subtitle">Fill out the form below for a comprehensive review of your practice billing & denial patterns.</p>
+
+        <form id="rcm-audit-form" class="audit-form">
+          
+          <div class="form-group">
+            <label for="full-name">Full Name *</label>
+            <input type="text" id="full-name" required placeholder="Dr. John Doe">
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="practice-name">Practice / Facility Name *</label>
+              <input type="text" id="practice-name" required placeholder="Apex Medical Care">
+            </div>
+            <div class="form-group">
+              <label for="specialty">Medical Specialty *</label>
+              <select id="specialty" required>
+                <option value="" disabled selected>Select Specialty</option>
+                <option value="cardiology">Cardiology</option>
+                <option value="orthopedics">Orthopedics</option>
+                <option value="dermatology">Dermatology</option>
+                <option value="internal_medicine">Internal Medicine / Primary</option>
+                <option value="pediatrics">Pediatrics</option>
+                <option value="other">Other Specialty</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="email">Work Email *</label>
+              <input type="email" id="email" required placeholder="john@apexmedical.com">
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone Number *</label>
+              <input type="tel" id="phone" required placeholder="(555) 000-0000">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="current-software">Current EHR / Billing Software</label>
+            <input type="text" id="current-software" placeholder="e.g. eClinicalWorks, Epic, Kareo, AthenaHealth">
+          </div>
+
+          <div class="form-group">
+            <label for="notes">Primary Billing Challenges / Notes</label>
+            <textarea id="notes" rows="3" placeholder="Tell us about high denial rates, aged A/R, or credentialing bottlenecks..."></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-gold btn-full">
+            <span>Submit Audit Request</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+          </button>
+
+          <p class="privacy-note">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+            HIPAA Compliant. Your information is kept strictly confidential and secure.
+          </p>
+
+        </form>
+
+        <!-- Form Success State (Hidden by default) -->
+        <div id="form-success-msg" class="success-message" style="display: none;">
+          <div class="success-icon">✓</div>
+          <h4>Audit Request Received!</h4>
+          <p>Thank you. Our RCM specialist will review your details and reach out within 24 business hours.</p>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ==========================================================================
+     Testimonials Section - Med Advance Healthcare
+     ========================================================================== -->
+<section class="testimonials-section" id="testimonials">
+  <div class="container">
+    
+    <!-- Section Header -->
+    <div class="section-header text-center">
+      <div class="sub-heading">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+        Client Testimonials
+      </div>
+      <h2 class="section-title">Trusted by Healthcare Leaders & Practices</h2>
+      <p class="section-description">
+        See how our end-to-end RCM services help medical practices across the nation maximize collections and eliminate billing stress.
+      </p>
+    </div>
+
+    <!-- Testimonials Grid -->
+    <div class="testimonials-grid">
+
+      <!-- Testimonial 1 -->
+      <div class="testimonial-card">
+        <div class="quote-icon">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor"><path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/></svg>
+        </div>
+        <div class="star-rating">★★★★★</div>
+        <p class="testimonial-text">
+          “Med Advance Healthcare provides excellent end-to-end RCM support. Their team is responsive, knowledgeable, and committed to improving our billing and collections.”
+        </p>
+        <div class="author-info">
+          <h4 class="author-name">Dr. Mohammad</h4>
+          <span class="author-role">Laboratory Director</span>
+        </div>
+      </div>
+
+      <!-- Testimonial 2 -->
+      <div class="testimonial-card highlight-card">
+        <div class="quote-icon gold-quote">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor"><path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/></svg>
+        </div>
+        <div class="star-rating">★★★★★</div>
+        <p class="testimonial-text">
+          “Their expertise in cardiology RCM has helped us streamline billing, manage denials, and improve our revenue cycle.”
+        </p>
+        <div class="author-info">
+          <h4 class="author-name">Cardiology Practice</h4>
+          <span class="author-role">USA</span>
+        </div>
+      </div>
+
+      <!-- Testimonial 3 -->
+      <div class="testimonial-card">
+        <div class="quote-icon">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor"><path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/></svg>
+        </div>
+        <div class="star-rating">★★★★★</div>
+        <p class="testimonial-text">
+          “A reliable RCM partner providing end-to-end billing support with excellent communication and follow-up.”
+        </p>
+        <div class="author-info">
+          <h4 class="author-name">Multi-Specialty Practice</h4>
+          <span class="author-role">USA</span>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- ==========================================================================
+     Footer Section - Med Advance Healthcare
+     ========================================================================== -->
+<footer class="site-footer">
+  <div class="container">
+    
+    <!-- Top Footer Grid -->
+    <div class="footer-grid">
+
+      <!-- Column 1: Company Info -->
+      <div class="footer-col brand-col">
+        <div class="footer-logo">
+          <div class="logo-symbol">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20M2 12h20"/><circle cx="12" cy="12" r="9"/></svg>
+          </div>
+          <div class="logo-text">
+            <span class="brand-med">MED ADVANCE</span>
+            <span class="brand-sub">HEALTHCARE</span>
+          </div>
+        </div>
+        <p class="footer-about">
+          Delivering end-to-end Revenue Cycle Management (RCM) solutions to medical practices, laboratories, and healthcare organizations across the US. Maximize revenue retention with zero claim leakage.
+        </p>
+        <div class="hipaa-badge">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+          <span>HIPAA Compliant & ISO Certified</span>
+        </div>
+      </div>
+
+      <!-- Column 2: Quick Links -->
+      <div class="footer-col">
+        <h4 class="footer-heading">Quick Links</h4>
+        <ul class="footer-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#services">Our Services</a></li>
+          <li><a href="#process">How It Works</a></li>
+          <li><a href="#testimonials">Testimonials</a></li>
+          <li><a href="#contact">Free RCM Audit</a></li>
+        </ul>
+      </div>
+
+      <!-- Column 3: RCM Services -->
+      <div class="footer-col">
+        <h4 class="footer-heading">RCM Solutions</h4>
+        <ul class="footer-links">
+          <li><a href="#services">Eligibility & Verification</a></li>
+          <li><a href="#services">Prior Authorization</a></li>
+          <li><a href="#services">Medical Coding & Billing</a></li>
+          <li><a href="#services">Denial Management</a></li>
+          <li><a href="#services">A/R Recovery & Aged Claims</a></li>
+          <li><a href="#services">Provider Credentialing</a></li>
+        </ul>
+      </div>
+
+      <!-- Column 4: Contact Info -->
+      <div class="footer-col">
+        <h4 class="footer-heading">Contact Us</h4>
+        <ul class="footer-contact">
+          <li>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            <span>+1 (800) 555-RCM1</span>
+          </li>
+          <li>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            <span>audit@medadvancehealth.com</span>
+          </li>
+          <li>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <span>United States</span>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+
+    <!-- Bottom Footer Bar -->
+    <div class="footer-bottom">
+      <p class="copyright">
+        &copy; <span id="current-year"></span> Med Advance Healthcare. All rights reserved.
+      </p>
+      <div class="legal-links">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+        <a href="#">HIPAA Statement</a>
+      </div>
+    </div>
+
+  </div>
+</footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
